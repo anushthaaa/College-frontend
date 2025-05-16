@@ -16,6 +16,13 @@ ul{
     gap: 10px;
 
 }
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 li{
     margin: 10px;
     background-color:darkgray;

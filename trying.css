@@ -1,0 +1,62 @@
+body {
+  background: #cddbe9;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-left: 32px;
+  margin-top: 32px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.box {
+  padding: 24px 32px 20px 32px;
+  border-radius: 18px;
+  color: #e9e6e6;
+  font-size: 1.15rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  box-shadow: 0 8px 24px rgba(39, 22, 22, 0.16), 0 2px 6px rgba(0,0,0,0.13);
+}
+
+.box-title {
+  background: rgba(133, 110, 110, 0.18);
+  color: #fff;
+  font-size: 1.35em;
+  font-weight: bold;
+  padding: 12px 28px;
+  border-radius: 14px 14px 0 0;
+  margin: -24px -32px 18px -32px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  letter-spacing: 1px;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.16);
+  border-bottom: 2px solid rgba(255,255,255,0.18);
+}
+
+.box.red {
+  background: linear-gradient(120deg, #070303 0%, #f857a6 100%);
+}
+
+.box.green {
+  background: linear-gradient(120deg, #040a06 0%, #38f9d7 100%);
+}
+
+.box.blue {
+  background: linear-gradient(120deg, #060b0f 0%, #478ed1 100%);
+}
+
+.box:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 16px 36px rgba(158, 69, 69, 0.19), 0 6px 16px rgba(0,0,0,0.16);
+  cursor: pointer;
+}

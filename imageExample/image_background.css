@@ -1,0 +1,52 @@
+/* global selector */
+*{
+    margin : 0;
+    padding : 0;
+}
+
+body{
+    background-image : url(../assets/bdc9abc877b6efdd812a6ab3d1ac09ec.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height : 100vh;
+    color:black;
+    background-color: rgb(138, 138, 129);
+    background-blend-mode: overlay;
+    background-position: center;
+
+}
+
+}
+
+h1 {
+  top: 0px;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(22, 17, 17);
+  text-shadow: 2px 2px 5px black;
+}
+
+#content{
+    position: absolute;
+    height: 300px;
+  top: 50px;
+  font-size: 15px;
+  margin-right: 4px;
+  font-weight: bold;
+  color: rgb(22, 17, 17);
+  text-shadow: 2px 2px 5px black;
+  background-attachment: fixed;
+  border-radius: 20px;
+
+  transition: 0.5s;
+
+}
+
+/* using pseudoclass : hover */
+
+#content:hover{
+    background-color : navy;
+    border-radius: 80px;
+
+
+}

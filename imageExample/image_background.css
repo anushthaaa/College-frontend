@@ -1,52 +1,70 @@
-/* global selector */
-*{
-    margin : 0;
-    padding : 0;
+/* ===========================
+   Global Box Model Reset
+   Remove default margin and padding on all elements
+   =========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-image : url(../assets/bdc9abc877b6efdd812a6ab3d1ac09ec.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height : 100vh;
-    color:black;
-    background-color: rgb(138, 138, 129);
-    background-blend-mode: overlay;
-    background-position: center;
-
+/* Body Styles*/
+body {
+  /* Soft overlay on image for readability */
+  background-image: url(../assets/photo-1618411248506-5d5c2e6a63ae.jpeg); /* use the correct path, e.g. ../assets/your_image.jpg */
+  background-size: 100%;        /* Ensures the image always covers the screen */
+  background-position: center;   /* Keeps the image centered */
+  background-repeat: no-repeat;  /* Prevents tiling */
+  min-height: 97vh;             /* Ensures body is at least the height of the viewport */
+  width: 100vw;                  /* Optional: ensures full width */
+  overflow: hidden;
+  color: #161111;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-
-
+/* Heading*/
 h1 {
-  top: 0px;
-  font-size: 30px;
+  font-size: 2.2rem;
   font-weight: bold;
-  color: rgb(22, 17, 17);
-  text-shadow: 2px 2px 5px black;
+  text-align: center;
+  color: #161111;
+  text-shadow: 2px 2px 5px #000;
+  margin-bottom: 2rem;
+  text-decoration: underline;
 }
 
-#content{
-    position: absolute;
-    height: 300px;
-  top: 50px;
-  font-size: 15px;
-  margin-right: 4px;
+/* Content Box*/
+#content {
+  background: rgba(255,255,255,0.17);
+  color: #161111;
   font-weight: bold;
-  color: rgb(22, 17, 17);
-  text-shadow: 2px 2px 5px black;
-  background-attachment: fixed;
+  font-size: 1.05rem;
+  text-shadow: 1px 1px 3px #fff, 2px 2px 5px #000;
   border-radius: 20px;
-
-  transition: 0.5s;
-
+  min-width: 220px;
+  max-width: 400px;
+  padding: 1.5rem 2.5rem;
+  margin: 0 auto;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  text-align: center;
+  transition: 
+    background 0.5s, 
+    color 0.5s, 
+    border-radius 0.5s,
+    box-shadow 0.5s;
 }
 
-/* using pseudoclass : hover */
-
-#content:hover{
-    background-color : navy;
-    border-radius: 80px;
-
-
+/* Fun hover effect for interactivity */
+/* using pseudoclass :hover */
+#content:hover {
+  background: rgba(68, 68, 72, 0.85); /* navy blue, semi-transparent */
+  color: #fff;
+  border-radius: 40px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.25);
+  cursor: pointer;
+  text-shadow: 1px 1px 3px #000, 2px 2px 5px #000;
 }

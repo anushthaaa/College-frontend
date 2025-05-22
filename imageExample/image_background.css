@@ -11,7 +11,7 @@
 /* Body Styles*/
 body {
   /* Soft overlay on image for readability */
-  background-image: url(../assets/photo-1618411248506-5d5c2e6a63ae.jpeg); /* use the correct path, e.g. ../assets/your_image.jpg */
+  background-image: url(../assets/image.jpeg); /* use the correct path, e.g. ../assets/your_image.jpg */
   background-size: 100%;        /* Ensures the image always covers the screen */
   background-position: center;   /* Keeps the image centered */
   background-repeat: no-repeat;  /* Prevents tiling */

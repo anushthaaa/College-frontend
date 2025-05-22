@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Element</title>
+</head>
+<body>
+    <h1>Responsive Picture Element Example</h1>
+
+    <!-- Picture element for responsive image handling -->
+    <picture>
+        <!-- Image for screens 600px and wider -->
+        <source media="(min-width: 600px)" srcset="../assets/sportsCar.jpg">
+
+        <!-- Default image for smaller screens -->
+        <img src="../assets/image.jpeg" alt="Football image for small screens">
+    </picture>
+
+    <p>This image changes based on your device’s screen width.</p>
+    
+</body>
+</html>

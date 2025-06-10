@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+table, th, td{
+    border: 2px solid navy;
+    /* double dekhirako border single dekhinxa */
+    border-collapse: collapse;
+}
+
+th, td {
+    /* cell padding */
+    padding: 13px 10px;
+    text-align: center;
+}
+
+table {
+    width : 50%;
+}
+
+.name-id {
+    width: 20%;
+}
+
+.college-id{
+    width: 30%;
+}

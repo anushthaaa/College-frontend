@@ -1,0 +1,28 @@
+#animal-table{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+/* decendent selector: select all the tr tags inside the animal table id */
+#animal-table tr{
+    height: 40px;
+    border-bottom: 2px solid grey;
+}
+
+/* pseudo class nth-child: select the element on the basis of argument provided */
+#animal-table tr:nth-child(1) {
+    background-color: rgb(23, 125, 125);
+}
+
+#animal-table tr:hover {
+    background-color: rgb(114, 156, 182);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#animal-table th:nth-child(1){
+    color: navy;
+}
+
+
